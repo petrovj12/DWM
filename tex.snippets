@@ -1,0 +1,107 @@
+snippet \beg "begin-end" bA
+\begin{$1}
+$0
+\end{$1}
+endsnippet
+
+snippet \sum "sum" iA
+\\sum_{k=$1}^{$2}$0
+endsnippet
+
+snippet \prod "product" iA
+\\prod_{k=$1}^{$2}$0
+endsnippet
+
+snippet \dprod "dot product" iA
+\\left<$1,$2\\right>$0
+endsnippet
+
+snippet \limit "limit" iA
+\\lim_{$1:x \to $2:\\infty} $0
+endsnippet
+
+snippet \sup "supremum" iA
+\\sup_{$1} $0
+endsnippet
+
+snippet \inf "infimum" iA
+\\inf_{$1} $0
+endsnippet
+
+snippet begset "sets" iA
+\\{ $1 \\} $0
+endsnippet
+
+snippet forall "for all" iA
+\\; \\forall $1
+endsnippet
+
+snippet aek "Aequivalenzklasse" iA
+[$1] $0
+endsnippet
+
+snippet faek "Große Aequivalenzklasse" iA
+\\left[$1\right]$0
+endsnippet
+
+snippet \limitsup "limsup" iA
+\\limsup_{$1:n \to $2:\\infty} $0
+endsnippet
+
+snippet \limitinf "liminf" iA
+\\liminf_{$1:n \to $2:\\infty} $0
+endsnippet
+
+snippet cconj "complex conjugate" iA
+\\overline{$1}$0
+endsnippet
+
+snippet lrang "surrounding angle brackets" iA
+\\langle $1\\rangle
+endsnippet
+
+snippet td "to the" iA
+^{$1}$0
+endsnippet
+
+snippet lr( "big paranthases" iA
+\\left($1\\right)$0
+endsnippet
+
+snippet lr{ "big curlies" iA
+\\left\\{$1\\right\\}$0
+endsnippet
+
+snippet lr[ "big square brackets" iA
+\\left[$1\\right]$0
+endsnippet
+
+snippet '([A-Za-z])(\d)' "subscript" wrA
+`!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
+endsnippet
+
+snippet // "Fraction" iA
+\\frac{$1}{$2}$0
+endsnippet
+
+snippet \intab "Definite Integral" iA
+\\int_{$1}^{$2}$3 \; \mathrm{d}x$0  
+endsnippet
+
+snippet \intz "Definite Integral" iA
+\\int_{$1} $2 \; \mathrm{d}z$0  
+endsnippet
+
+snippet \dff "Derivative" iA
+\\frac{\mathrm{d}$1}{\mathrm{d}x}$0
+endsnippet
+
+snippet \pdff "Partial Derivative" iA
+\\frac{\partial $1}{\partial $2}$0
+endsnippet
+
+snippet \funcd "function defintion" iA
+$1:$2\to $3
+endsnippet
+
+
